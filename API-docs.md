@@ -2,15 +2,6 @@
 * URL: /api/calls
 * Method: POST
 * Object description:
-
-    - Start calls – All fields are required.
-    - End calls – type, date_register and call_id are required.
-
-
-# Call bill
-* URL: /api/bill
-* Method: GET
-* Object description:
     - type
         
         Description: Indicate if the call starts or ends.
@@ -50,6 +41,32 @@
         Data Type: Char
       
         Formar: AAXXXXXXXXX or AAXXXXXXXX
+    
+    Start calls – All fields are required.
+    
+    End calls – type, date_register and call_id are required.
+
+
+# Call bill
+* URL: /api/bill
+* Method: GET
+* Object description:
+    - phone
+        
+        Description: Source phone number (required).
+        
+        Data Type: Integer
+        
+        Formar: AAXXXXXXXXX or AAXXXXXXXX
+    
+    - period
+        
+        Description: Month and year (optional)
+        
+        Data Type: Char
+        
+        Formar: MM/YYYY
+    
 	
    Returns **destination phone number**, **call start date**, **call start time**, 
    **call duration** and **call price** for each call in the period. 
