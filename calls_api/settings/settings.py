@@ -24,7 +24,7 @@ SECRET_KEY = '8kl(*jj8#f0^@)#0k(=x$p5l&@68z)qanlm)cbihm7$w02oxk_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['olist-leandro-call-api.herokuapp.com', 'localhost']
 
 
 # Application definition
