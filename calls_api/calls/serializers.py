@@ -32,3 +32,11 @@ class CallRecordSerializer(serializers.Serializer):
             raise serializers.ValidationError("Call ID has to be numeric.")
         return value
 
+
+class BillSerializer(serializers.Serializer):
+    destination = serializers.CharField()
+    call_start_date = serializers.DateField()
+    call_start_time = serializers.TimeField()
+    call_duration = serializers.TimeField()
+    call_price = serializers.CharField()
+
