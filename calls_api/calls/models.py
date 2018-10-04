@@ -5,6 +5,7 @@ recording_choices = (
     ('END', 'End')
 )
 
+
 class CallRecord(models.Model):
     type = models.CharField('Type', max_length=10, choices=recording_choices)
     date_register = models.DateTimeField('Time register')
