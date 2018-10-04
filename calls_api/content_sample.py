@@ -1,4 +1,4 @@
-from calls_api.calls.models import CallRecord
+from .calls.models import CallRecord
 source_phone = '99988526423'
 destination_phone = '9993468278'
 datas =[
